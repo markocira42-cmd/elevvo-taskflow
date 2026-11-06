@@ -1,0 +1,13 @@
+/* _____FOR MOBILE_____ */
+
+/* GLOBAL */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+  /* _____FOR DESKTOP_____ */
+}
