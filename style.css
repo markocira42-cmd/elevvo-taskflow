@@ -1,8 +1,9 @@
 :root {
   --primary-color: rgb(0, 221, 118);
+  --bg-dark: rgb(0, 48, 26);
   --bg-light: #ebebeb;
-  --bg-dark: #061320;
   --text-dark: #333;
+  --text-light: #f4f4f4;
   --bg-card: #f4f4f4;
   --font-main:
     system-ui, -apple-system, BlinkMacSystemFont,
@@ -29,6 +30,7 @@ body {
   background-color: var(--bg-light);
   color: var(--text-dark);
   font-family: var(--font-main);
+  font-size: 1.1rem;
 }
 
 section {
@@ -51,7 +53,7 @@ section h2 {
 
 .back-to-top {
   position: fixed;
-  bottom: 5rem;
+  bottom: 10rem;
   right: 2rem;
   padding: 1rem;
   background-color: var(--primary-color);
@@ -59,10 +61,11 @@ section h2 {
   color: var(--text-dark);
   border-radius: 500px;
   box-shadow: 0 2px 4px #757575;
+  transition: 0.2s ease;
+  opacity: 0.8;
 }
 
 .back-to-top:hover {
-  opacity: 0.8;
   transform: translateY(-2px);
   color: #000;
 }
@@ -70,6 +73,7 @@ section h2 {
 .back-to-top i {
   color: #000;
   font-size: 1.3rem;
+  font-weight: 900;
 }
 
 /* CTA */
@@ -326,6 +330,50 @@ main {
 
 .pricing-card.pro {
   border: 1px solid var(--primary-color);
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 2rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* Contact */
+
+#contact {
+  margin-bottom: 3rem;
+}
+
+#contact ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#contact li {
+  list-style: none;
+  margin: 0;
+  transition: 0.2s ease;
+}
+
+#contact li:hover {
+  transform: translateY(-3px);
+}
+
+#contact a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+#contact a:hover {
+  color: blue;
 }
 
 /* MEDIA QUERIES */
