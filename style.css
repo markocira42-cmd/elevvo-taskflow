@@ -1,6 +1,7 @@
 :root {
-  --primary-color: rgb(9, 174, 97);
-  --background-color: #ebebeb;
+  --primary-color: rgb(0, 221, 118);
+  --bg-light: #ebebeb;
+  --bg-dark: #061320;
   --text-dark: #333;
   --text-light: #f4f4f4;
   --font-main:
@@ -23,8 +24,91 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  font-family: var(--font-main);
+}
+
+/* HEADER */
+
+header {
+  background-color: rgb(84, 10, 10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+header .mobile-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header .logo {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+}
+
+/* MAIN-NAVBAR */
+
+#main-navbar {
+}
+
+#main-navbar ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#main-navbar li {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+#main-navbar a {
+  text-decoration: none;
+  color: var(--text-light);
+}
+
+#main-navbar a:hover {
+  color: var(--primary-color);
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
   /* _____FOR DESKTOP_____ */
+
+  /* HEADER */
+
+  header {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  header .cta {
+    display: none;
+  }
+
+  /* MAIN-NAVBAR */
+
+  #main-navbar ul {
+    justify-content: space-between;
+  }
+
+  #main-navbar li:nth-child(4) {
+    margin-right: 0;
+  }
+
+  /* MAIN */
+
+  main {
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+  }
 }
