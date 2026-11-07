@@ -36,18 +36,20 @@ body {
 .cta {
   border: none;
   background-color: var(--primary-color);
-  color: #000;
+  color: var(--text-dark);
   font-weight: bold;
   padding: 0.5rem;
   border-radius: 5px;
   cursor: pointer;
   box-shadow: 0 1px 2px #757575;
   transition: 0.2s ease;
+  text-align: center;
 }
 
 .cta:hover {
   opacity: 0.8;
   transform: translateY(-2px);
+  color: #000;
 }
 
 .cta:active {
@@ -64,6 +66,7 @@ header {
   justify-content: space-between;
   padding: 2rem 2rem;
   box-shadow: 0 1px 5px var(--shadow-light);
+  width: 100%;
 }
 
 header .mobile-wrapper {
@@ -132,6 +135,39 @@ header .logo {
 
 main {
   min-height: 100vh;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* SHOWCASE */
+
+.showcase {
+  min-height: calc(100vh - 30vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.showcase h1 {
+  color: var(--primary-color);
+  font-size: clamp(3rem, 4vw, 5rem);
+  margin: 1rem 0;
+}
+
+.showcase p {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  margin-bottom: 1.5rem;
+  width: 90%;
+}
+
+.showcase .cta {
+  margin-bottom: 2rem;
+  width: 50%;
+  height: 7vh;
+  font-size: clamp(0.8rem, 4vw, 1.5rem);
 }
 
 /* MEDIA QUERIES */
@@ -139,12 +175,25 @@ main {
 @media (min-width: 768px) {
   /* _____FOR DESKTOP_____ */
 
+  /* GLOBAL */
+
+  .cta {
+    transition: 0.3s ease;
+  }
+
   /* HEADER */
 
   header {
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 1rem 2rem;
+  }
+
+  header .mobile-wrapper {
+    position: relative;
+    box-shadow: none;
+    padding: 0;
   }
 
   header .cta {
@@ -153,11 +202,66 @@ main {
 
   /* MAIN-NAVBAR */
 
+  #main-navbar {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  #main-navbar ul {
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+  }
+
+  #main-navbar li {
+    padding: 0;
+  }
+
+  #main-navbar a {
+    background-color: var(--bg-light);
+    box-shadow: none;
+    margin: 0 0.5rem;
+    font-weight: bold;
+    transition: 0.2s ease;
+  }
+
+  #main-navbar a:hover {
+    box-shadow: 0 2px 3px var(--shadow-light);
+  }
+
+  #main-navbar a:active {
+    color: #fff;
+  }
+
   /* MAIN */
 
   main {
     width: 75%;
-    margin: auto;
-    overflow: hidden;
+  }
+
+  /* SHOWCASE */
+
+  .showcase {
+    min-height: 100vh;
+  }
+
+  .showcase h1 {
+    color: var(--primary-color);
+    font-size: clamp(5.5rem, 4vw, 5rem);
+    margin: 0 0 2rem 0;
+  }
+
+  .showcase p {
+    font-size: clamp(1rem, 4vw, 2rem);
+    width: 80%;
+    line-height: 1.6em;
+    margin-bottom: 3rem;
+  }
+
+  .showcase .cta {
+    width: 50%;
+    height: 10vh;
+    font-size: clamp(15px, 4vw, 1.5rem);
   }
 }
