@@ -3,7 +3,7 @@
   --bg-light: #ebebeb;
   --bg-dark: #061320;
   --text-dark: #333;
-  --text-light: #f4f4f4;
+  --bg-card: #f4f4f4;
   --font-main:
     system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
@@ -38,6 +38,13 @@ section {
 section h2 {
   text-align: center;
   margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+/* HIGHLIGHT */
+
+.highlight {
+  color: var(--primary-color);
 }
 
 /* CTA */
@@ -183,6 +190,117 @@ main {
   width: 50%;
   height: 7vh;
   font-size: clamp(0.8rem, 4vw, 1.5rem);
+}
+
+/* FEATURES */
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 85%;
+  grid-gap: 2em;
+  justify-content: center;
+}
+
+.features-card {
+  background-color: var(--bg-card);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10%;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.features-card:hover {
+  box-shadow: 0 3px 4px var(--primary-color);
+  transform: translateY(-10px);
+}
+
+.features-card .icon {
+  font-size: clamp(3rem, 4vw, 10rem);
+  margin-bottom: 1rem;
+}
+
+.features-card h3 {
+  margin-bottom: 1rem;
+}
+
+.features-card p {
+  margin-bottom: 1rem;
+}
+
+/* TESTIMONIALS */
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 85%;
+  grid-gap: 2em;
+  justify-content: center;
+}
+
+.testimonials-card {
+  background-color: var(--bg-card);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10%;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.testimonials-card:hover {
+  box-shadow: 0 3px 4px var(--primary-color);
+  transform: translateY(-10px);
+}
+
+.testimonials-card h3 {
+  margin-bottom: 1rem;
+}
+
+.testimonials-card p {
+  margin-bottom: 1rem;
+}
+
+/* PRICING */
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 85%;
+  grid-gap: 2em;
+  justify-content: center;
+}
+
+.pricing-card {
+  background-color: var(--bg-card);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10%;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.pricing-card:hover {
+  box-shadow: 0 3px 4px var(--primary-color);
+  transform: translateY(-10px);
+}
+
+.pricing-card h3 {
+  margin-bottom: 1rem;
+}
+
+.pricing-card p {
+  margin-bottom: 1rem;
+}
+
+.pricing-card.pro {
+  border: 1px solid var(--primary-color);
 }
 
 /* MEDIA QUERIES */
