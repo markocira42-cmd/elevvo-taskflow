@@ -478,4 +478,18 @@ footer p {
   .showcase .cta:active {
     transform: translateY(3px);
   }
+
+  /* FEATURES */
+
+  .features-grid {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(3, auto);
+  }
 }
