@@ -324,7 +324,7 @@ main {
   margin-bottom: 1rem;
 }
 
-.pricing-card p {
+.pricing-card strong {
   margin-bottom: 1rem;
 }
 
@@ -348,6 +348,11 @@ footer p {
 
 #contact {
   margin-bottom: 3rem;
+}
+
+#contact h4 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 #contact ul {
@@ -443,7 +448,7 @@ footer p {
   /* MAIN */
 
   main {
-    width: 75%;
+    width: 80%;
   }
 
   /* SHOWCASE */
@@ -483,13 +488,16 @@ footer p {
 
   .features-grid {
     grid-template-columns: repeat(3, auto);
+    margin: 0 10px;
   }
 
   .testimonials-grid {
     grid-template-columns: repeat(2, auto);
+    margin: 0 10px;
   }
 
   .pricing-grid {
     grid-template-columns: repeat(3, auto);
+    margin: 0 10px;
   }
 }
