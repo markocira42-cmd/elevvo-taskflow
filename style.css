@@ -66,6 +66,12 @@ section h2 {
   transform: translateY(2px);
 }
 
+/* ICON */
+
+.icon {
+  color: var(--primary-color);
+}
+
 /* HEADER */
 
 header {
