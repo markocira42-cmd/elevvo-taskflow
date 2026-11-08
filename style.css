@@ -159,6 +159,7 @@ header .logo {
 #main-navbar li {
   margin: 0;
   list-style: none;
+  width: 100%;
 }
 
 #main-navbar a {
@@ -171,6 +172,7 @@ header .logo {
   background-color: #ddd;
   border-radius: 5px;
   transition: 0.1s ease;
+  display: block;
 }
 
 #main-navbar a:hover {
