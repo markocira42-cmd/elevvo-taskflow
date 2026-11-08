@@ -55,25 +55,32 @@ section h2 {
   position: fixed;
   bottom: 10rem;
   right: 2rem;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   background-color: var(--primary-color);
   text-decoration: none;
   color: var(--text-dark);
   border-radius: 500px;
   box-shadow: 0 2px 4px #757575;
-  transition: 0.2s ease;
-  opacity: 0.8;
+  transition: 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .back-to-top:hover {
   transform: translateY(-2px);
   color: #000;
+  opacity: 1;
 }
 
 .back-to-top i {
   color: #000;
   font-size: 1.3rem;
   font-weight: 900;
+}
+
+.show {
+  opacity: 0.9;
+  pointer-events: auto;
 }
 
 /* CTA */
