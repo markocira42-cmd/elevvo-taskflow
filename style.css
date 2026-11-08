@@ -335,8 +335,16 @@ main {
   margin-bottom: 1rem;
 }
 
-.pricing-card strong {
+.pricing-card p {
   margin-bottom: 1rem;
+}
+
+.pricing-card p .badge {
+  background-color: #fff;
+  color: var(--text-dark);
+  border-radius: 20px;
+  border: 1px solid var(--primary-color);
+  padding: 0.3rem;
 }
 
 .pricing-card.pro {
