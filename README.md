@@ -24,7 +24,7 @@ A fully responsive, modern landing page for a fictional SaaS product (TaskFlow).
 ## Screenshots
 
 ### Desktop View
-(./screenshots/desktop-view.png)
+![Desktop View](./screenshots/desktop-view.png)
 
 ### Mobile View
-(./screenshots/mobile-view.png)
+![Mobile View](./screenshots/mobile-view.png)
