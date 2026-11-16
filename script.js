@@ -4,16 +4,19 @@ const backToTop = document.querySelector('.back-to-top');
 
 const reveal = document.querySelectorAll('.reveal');
 
-const io = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('active');
-      io.unobserve(entry.target);
-    } else {
-      entry.target.classList.remove('active');
-    }
-  });
-});
+const io = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        io.unobserve(entry.target);
+      } else {
+        entry.target.classList.remove('active');
+      }
+    });
+  },
+  { rootMargin: '0px 0px -40px 0px' }
+);
 
 // Modular Functions
 

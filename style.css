@@ -43,6 +43,19 @@ section h2 {
   color: var(--primary-color);
 }
 
+/* SCROLL ANIMATIONS */
+
+.reveal {
+  transform: translateY(150px);
+  opacity: 0;
+}
+
+.active {
+  transition: 0.9s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* HIGHLIGHT */
 
 .highlight {
@@ -256,12 +269,12 @@ main {
   text-align: center;
   padding: 10%;
   width: 100%;
-  transition: 0.3s ease;
 }
 
 .features-card:hover,
 .testimonials-card:hover,
 .pricing-card:hover {
+  transition: 0.3s ease;
   box-shadow: 0 3px 4px var(--primary-color);
   transform: translateY(-10px);
 }
@@ -369,19 +382,6 @@ footer p {
 
 #contact a:hover {
   color: blue;
-}
-
-/* SCROLL ANIMATIONS */
-
-.reveal {
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 0.7s ease;
-}
-
-.active {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* MEDIA QUERIES */
