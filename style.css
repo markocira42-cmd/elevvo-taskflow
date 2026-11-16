@@ -369,6 +369,19 @@ footer p {
   color: blue;
 }
 
+/* SCROLL ANIMATIONS */
+
+.reveal {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 0.8s ease;
+}
+
+.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
